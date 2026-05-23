@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("fonts/Montserrat-Bold.woff") format(woff);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("fonts/Montserrat-Regular.woff") format(woff);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat Regular", Arial, sans-serif;
+}
+
+.title {
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 78px;
+  text-align: center;
+  margin-top: 220px;
+  margin-bottom: 110px;
+  color: #515076;
+}
+
+.product_cards_container {
+  display: flex;
+  justify-content: center;
+}
+
+.product_cards {
+  width: 1110px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+}
+
+.product_card {
+  color: #515076;
+  padding: 25px;
+  width: 340px;
+  background-color: #F7F7FA;
+  justify-self: center;
+  box-shadow: 2px 2px 10px rgba(81, 86, 92, 0.1);
+}
+
+.product_card_image {
+  margin-bottom: 30px;
+}
+
+.product_card_category {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: #A5A3B9;
+}
+
+.product_card_title {
+  font-family: "Montserrat Bold", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0 0 5px 0;
+}
+
+.product_card_description {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0 0 15px 0;
+}
+
+.product_card_ingredients {
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0 0 5px 0;
+}
+
+.product_card_list {
+  list-style-type: circle;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  margin: 0 0 25px 0;
+}
+
+.product_card_list li {
+  margin-bottom: 5px;
+}
+
+.product_card-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.product_card-price b {
+  font-family: "Montserrat Bold", Arial, sans-serif;
+}
