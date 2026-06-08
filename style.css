@@ -27,6 +27,8 @@ body {
   margin-top: 220px;
   margin-bottom: 110px;
   color: #515076;
+  position: relative;
+  z-index: 20;
 }
 
 .product_cards_container {
@@ -40,9 +42,19 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 45px;
+  position: relative;
+  z-index: 10;
+}
+
+.background_dandelions {
+  position: absolute;
+  left: 0;
+  top: -408px;
+  z-index: -1;
 }
 
 .product_card {
+
   color: #515076;
   padding: 25px;
   width: 340px;
