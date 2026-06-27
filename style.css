@@ -31,11 +31,6 @@ body {
   z-index: 20;
 }
 
-.products__container {
-  display: flex;
-  justify-content: center;
-}
-
 .products__cards {
   width: 1110px;
   display: flex;
@@ -44,6 +39,8 @@ body {
   gap: 45px;
   position: relative;
   z-index: 10;
+  margin: 0 auto;
+
 }
 
 .products__background {
@@ -121,4 +118,26 @@ body {
 
 .card__price b {
   font-family: "Montserrat Bold", Arial, sans-serif;
+}
+
+.products__button-container {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  padding: 45px 0;
+  position: relative;
+  z-index: 30;
+}
+
+.products__button {
+  background-color: #689fb0;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+.products__button--active {
+  background-color: #515076;
 }
