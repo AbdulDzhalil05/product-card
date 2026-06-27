@@ -1,27 +1,27 @@
 const productCard = document.querySelector('.card');
 const productCards = document.querySelectorAll('.card');
-const buttonChangeBgcolorFirstCard = document.querySelector('#button-change-bgcolor-first-card');
-const buttonChangeBgcolorAllCard = document.querySelector('#button-change-bgcolor-all-card');
-const buttonOpenGooglePage = document.querySelector('#button-open-google-page');
-const buttonMessageOutput = document.querySelector('#button-message-output');
+const changeBgcolorFirstCardButton = document.querySelector('#change-bgcolor-first-card-button');
+const changeBgcolorAllCardButton = document.querySelector('#change-bgcolor-all-card-button');
+const openGooglePageButton = document.querySelector('#open-google-page-button');
+const messageOutputButton = document.querySelector('#message-output-button');
 const mainTitle = document.querySelector('.products__title');
-const buttonCangeOwnColor = document.querySelector('#button-change-own-color');
+const changeOwnColorButton = document.querySelector('#change-own-color-button');
 
-buttonChangeBgcolorFirstCard.addEventListener('click', () => {
+changeBgcolorFirstCardButton.addEventListener('click', () => {
   productCard.style.backgroundColor = '#7c85d6';
 })
 
-buttonChangeBgcolorAllCard.addEventListener('click', () => {
+changeBgcolorAllCardButton.addEventListener('click', () => {
   productCards.forEach((card) => {
     card.style.backgroundColor = '#c597db';
   })
 })
 
-buttonOpenGooglePage.addEventListener('click', () => {
+openGooglePageButton.addEventListener('click', () => {
   window.open('https://google.com')
 })
 
-buttonMessageOutput.addEventListener('click', () => {
+messageOutputButton.addEventListener('click', () => {
   console.log('ДЗ №6');
   alert('ДЗ №6');
 })
@@ -30,6 +30,6 @@ mainTitle.addEventListener('mouseover', () => {
   console.log(mainTitle.innerText)
 })
 
-buttonCangeOwnColor.addEventListener('click', () => {
-  buttonCangeOwnColor.classList.toggle('products__button--active')
+changeOwnColorButton.addEventListener('click', () => {
+  changeOwnColorButton.classList.toggle('products__button--active')
 })
