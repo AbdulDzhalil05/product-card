@@ -35,16 +35,16 @@ let formatedComments = comments.map(item => (item.body.length > 180 ? { ...item,
 
 console.log(formatedComments);
 
-let arrayEmail1 = comments.reduce((array, item) => {
+let emailsByReduce = comments.reduce((array, item) => {
   array.push(item.email);
   return array;
 }, []);
 
-console.log(arrayEmail1);
+console.log(emailsByReduce);
 
-let arrayEmail2 = comments.map(item => item.email);
+let emailsByMap = comments.map(item => item.email);
 
-console.log(arrayEmail2);
+console.log(emailsByMap);
 
-console.log(arrayEmail1.toString());
-console.log(arrayEmail1.join("\n"));
+console.log(emailsByReduce.toString());
+console.log(emailsByReduce.join("\n"));
