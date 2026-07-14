@@ -4,12 +4,12 @@ const productList = document.querySelector('.products__cards');
 const productTemplate = document.querySelector('#product-template');
 
 function getCardsCount() {
-  let count;
+  let count = NaN;
 
-  do {
+  while (Number.isNaN(count)) {
     count = +prompt('Сколько карточек отобразить?');
     if (count > 5) count = 5;
-  } while (Number.isNaN(count));
+  };
 
   return count;
 }
@@ -18,7 +18,7 @@ function showCards(count) {
   for (let i = 0; i < count; i++) {
     const productClone = productTemplate.content.cloneNode(true);
 
-    productClone.querySelector('.card__image img').src = productCards[i].image;
+    productClone.querySelector('.card__image img').src = `images/${productCards[i].image}.png`;
     productClone.querySelector('.card__image img').alt = productCards[i].title;
     productClone.querySelector('.card__title').textContent = productCards[i].title;
     productClone.querySelector('.card__description').textContent = productCards[i].description;
@@ -36,7 +36,7 @@ function showCards(count) {
 
 showCards(getCardsCount());
 
-const array = productCards.reduce((array, card) => {
+const productDescriptions = productCards.reduce((array, card) => {
   array.push({ [card.title]: card.description });
   return array;
 }, []);
