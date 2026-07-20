@@ -8,10 +8,10 @@ function getCardsCount() {
 
   while (Number.isNaN(count)) {
     count = +prompt('Сколько карточек отобразить?');
-    if (count > 5) count = 5;
+    return count > 5 ? 5 : count;
   };
 
-  return count;
+
 }
 
 function showCards(count) {
