@@ -1,12 +1,16 @@
 const emailForm = document.querySelector(".form");
 let userObject = {};
 
+function createObject(form) {
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+  return data;
+}
+
 emailForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const form = event.target;
-  const formData = new FormData(form);
-  const data = Object.fromEntries(formData.entries());
-  console.log(data);
+  console.log(createObject(form));
 })
 
 const buttonRegister = document.querySelector("#register-btn");
@@ -43,8 +47,7 @@ registerForm.addEventListener("submit", (event) => {
     } else {
       modalConfirmPassword.classList.remove("modal__confirmPasswordError");
       const form = event.target
-      const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
+      const data = createObject(form);
       const date = new Date();
       userObject = { ...data, createdOn: date }
       console.log(userObject);
