@@ -16,7 +16,7 @@
   <main class="products">
     <div class="products__modal modal">
       <form class="modal__form" action="">
-        <button class="modal__close">X</button>
+        <button type="button" class="modal__close">X</button>
         <input type="text" name="firstName" placeholder="Имя" pattern="^[А-Яа-яЁёA-Za-z]+$" required>
         <input type="text" name="lastName" placeholder="Фамилия" pattern="^[А-Яа-яЁёA-Za-z]+$" required>
         <input type="date" name="birthDate" placeholder="Дата рождения" required>
@@ -27,7 +27,7 @@
         </div>
         <div class="modal__button">
           <button id="buttonSendForm" type="submit">Отправить</button>
-          <button type="reset">Сбросить</button>
+          <button id="resetBtn">Сбросить</button>
         </div>
       </form>
     </div>
@@ -79,7 +79,7 @@
       </div>
       <div class="footer__column">
         <form class="footer__form form" action="" method="post">
-          <label class="form__label" for="email">Подпишись на наши акции:</label>
+          <label class="form__label" for="form__email">Подпишись на наши акции:</label>
           <div class="form__container">
             <input id="form__email" type="email" name="email" placeholder="Введи Email..." required>
             <button class="form__button" type="submit">Подписаться</button>
@@ -103,12 +103,7 @@
     <p class="footer__copyright">www.product-cards.com©all right reserve</p>
   </footer>
 
-  <script src="js/homework-7.js"></script>
-  <script src="js/homework-8.js"></script>
-  <script type="module" src="js/homework-9.js"></script>
-  <script type="module" src="js/homework-10.js"></script>
-  <script src="js/main.js" defer></script>
-  <script src="js/homework-11.js"></script>
+  <script type="module" src="js/main.js" defer></script>
 
 </body>
 
