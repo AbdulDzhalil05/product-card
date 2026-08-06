@@ -39,4 +39,4 @@ export class Modal {
     closeButton.addEventListener('click', this.boundHandler)
   }
 
-}
+} 
