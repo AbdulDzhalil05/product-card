@@ -10,7 +10,7 @@ class Modal {
       this.open();
     })
 
-    this.buttonClose.addEventListener("click", (event) => {
+    this.buttonClose.addEventListener("click", () => {
       this.close();
     })
   }

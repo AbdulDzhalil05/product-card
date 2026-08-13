@@ -14,9 +14,6 @@ class Form {
       }
     })
 
-    this.resetBtn.addEventListener('click', () => {
-      this.reset();
-    })
   }
 
   getFormValues() {
