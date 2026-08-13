@@ -27,17 +27,17 @@
         </div>
         <div class="modal__button">
           <button id="buttonSendForm" type="submit">Отправить</button>
-          <button id="resetBtn">Сбросить</button>
+          <button id="resetBtn" type="reset">Сбросить</button>
         </div>
       </form>
     </div>
     <div class="products__button-container">
-      <button id="change-own-color-button" class="products__button"> Изменить цвет кнопки</button>
-      <button id="change-bgcolor-first-card-button" class="products__button">Изменить цвет фона первой карточки</button>
-      <button id="change-bgcolor-all-card-button" class="products__button">Изменить цвет фона первой карточки</button>
-      <button id="open-google-page-button" class="products__button">Открыть сайт Google</button>
-      <button id="message-output-button" class="products__button">Вывод сообщения</button>
-      <button id="register-btn" class="products__register">Регистрация</button>
+      <button id="change-own-color-button" class="products__button" type="button"> Изменить цвет кнопки</button>
+      <button id="change-bgcolor-first-card-button" class="products__button" type="button">Изменить цвет фона первой карточки</button>
+      <button id="change-bgcolor-all-card-button" class="products__button" type="button">Изменить цвет фона первой карточки</button>
+      <button id="open-google-page-button" class="products__button" type="button">Открыть сайт Google</button>
+      <button id="message-output-button" class="products__button" type="button">Вывод сообщения</button>
+      <button id="register-btn" class="products__register" type="button">Регистрация</button>
     </div>
     <h1 class="products__title">Выбери свой продукт</h1>
     <div class="products__container">
@@ -50,7 +50,7 @@
         <template id="product-template">
           <article class="products__card card">
             <div class="card__image">
-              <img src="" alt="" width="290">
+              <img alt="" width="290">
             </div>
             <span class="card__category">для нормальной кожи</span>
             <h2 class="card__title"></h2>
@@ -79,9 +79,9 @@
       </div>
       <div class="footer__column">
         <form class="footer__form form" action="" method="post">
-          <label class="form__label" for="form__email">Подпишись на наши акции:</label>
+          <label class="form__label" for="form-email">Подпишись на наши акции:</label>
           <div class="form__container">
-            <input id="form__email" type="email" name="email" placeholder="Введи Email..." required>
+            <input id="form-email" type="email" name="email" placeholder="Введи Email..." required>
             <button class="form__button" type="submit">Подписаться</button>
           </div>
         </form>

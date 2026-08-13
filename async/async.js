@@ -11,12 +11,6 @@ function addEventListenerToButtons() {
   buttonClearUser.addEventListener('click', clearUser);
 }
 
-function isEmptyLocalStorage() {
-  if (localStorage.length === 0) {
-    return true;
-  } else return false;
-}
-
 function clearUser() {
   isUsersShow = false;
   const users = JSON.parse(localStorage.getItem("users"));

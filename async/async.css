@@ -23,7 +23,7 @@ ul {
   cursor: pointer;
 }
 
-.status_bar {
+.status-bar {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -46,7 +46,7 @@ ul {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 30px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
 }
 
 .users__info li {

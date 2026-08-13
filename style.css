@@ -69,7 +69,7 @@ body {
   width: 340px;
   background-color: #F7F7FA;
   justify-self: center;
-  box-shadow: 2px 2px 10px rgba(81, 86, 92, 0.1);
+  box-shadow: 2px 2px 10px rgb(81 86 92 / 10%);
 }
 
 .card__image {
@@ -91,21 +91,21 @@ body {
   font-family: "Montserrat Bold", Arial, sans-serif;
   font-size: 20px;
   line-height: 27px;
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
 }
 
 .card__description {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
 }
 
 .card__ingredients {
   display: block;
   font-size: 13px;
   line-height: 18px;
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
 }
 
 .card__list {
@@ -113,9 +113,8 @@ body {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-  margin-bottom: 15px;
   padding-left: 15px;
-  margin: 0 0 25px 0;
+  margin: 0 0 25px;
 }
 
 .card__list li {
@@ -221,7 +220,7 @@ body {
   padding-left: 88px;
 }
 
-#form__email {
+#form-email {
   border: none;
   width: 280px;
   outline: none;
@@ -304,7 +303,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: 90;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgb(0 0 0 / 50%);
 }
 
 .modal-showed {

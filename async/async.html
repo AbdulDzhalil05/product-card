@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Homework 14">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="async.css">
 </head>
-<body>
-  <div class="status_bar">Данные загружаются...</div>
 
-  <div class="users__container">
-    <div class="users__buttons-container">
-      <button id="get-all-cards" class="users__button">ПОЛУЧИТЬ ВСЕ КАРТОЧКИ</button>
-      <button id="delete-all-cards" class="users__button">УДАЛИТЬ ВСЕ КАРТОЧКИ</button>
-      <button id="delete-specific-card" class="users__button">УДАЛИТЬ ОПРЕДЕЛЕННУЮ КАРТОЧКУ</button>
+<body>
+  <main class="users">
+    <h1 class="users__title">Пользователи</h1>
+    <div class="status-bar">Данные загружаются...</div>
+
+    <div class="users__container">
+      <div class="users__buttons-container">
+        <button id="get-all-cards" class="users__button" type="button">ПОЛУЧИТЬ ВСЕ КАРТОЧКИ</button>
+        <button id="delete-all-cards" class="users__button" type="button">УДАЛИТЬ ВСЕ КАРТОЧКИ</button>
+        <button id="delete-specific-card" class="users__button" type="button">УДАЛИТЬ ОПРЕДЕЛЕННУЮ КАРТОЧКУ</button>
+      </div>
+      <div class="users__cards">
+        <template id="users__card-template">
+          <div class="users__card card">
+            <ul class="users__info">
+              <li class="users__id">ID: </li>
+              <li class="users__name">Name: </li>
+              <li class="users__surname">Surname: </li>
+              <li class="users__email">Email: </li>
+              <li class="users__age">Age: </li>
+            </ul>
+          </div>
+        </template>
+      </div>
     </div>
-    <div class="users__cards">
-      <template id="users__card-template">
-        <div class="users__card card">
-          <ul class="users__info">
-            <li class="users__id">ID: </li>
-            <li class="users__name">Name: </li>
-            <li class="users__surname">Surname: </li>
-            <li class="users__email">Email: </li>
-            <li class="users__age">Age: </li>
-          </ul>
-        </div>
-      </template>
-    </div>
-  </div>
-  
+  </main>
 
   <script src="async.js"></script>
 </body>
+
 </html>
