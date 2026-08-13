@@ -17,19 +17,6 @@ function isEmptyLocalStorage() {
   } else return false;
 }
 
-function hadUsersInLocalStorage() {
-  let values;
-  if (!isEmptyLocalStorage()) {
-    values = Object.keys(localStorage);
-  }
-  for (let i = 0; i < localStorage.length; i++) {
-    if (values[i] === "users") {
-      return true;
-    }
-  }
-  return false;
-}
-
 function clearUser() {
   isUsersShow = false;
   const users = JSON.parse(localStorage.getItem("users"));
@@ -53,7 +40,7 @@ function showUsers() {
     return;
   }
 
-  if (!hadUsersInLocalStorage()) {
+  if (!localStorage.getItem("users")) {
     fetchData();
     const statusBar = document.querySelector('.status_bar');
     statusBar.style.display = 'block';
