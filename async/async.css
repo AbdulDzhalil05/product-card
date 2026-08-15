@@ -1,0 +1,58 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.users__buttons-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.users__button {
+  width: 250px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.status-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.users__cards {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+}
+
+.users__info li {
+  padding-bottom: 5px;
+}
+
+.users__info li:last-child {
+  padding-bottom: 0;
+}

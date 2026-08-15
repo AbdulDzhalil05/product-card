@@ -15,9 +15,6 @@ emailForm.addEventListener("submit", (event) => {
 })
 
 const registerForm = document.querySelector(".modal__form");
-const modalConfirmPassword = document.querySelector(".modal__confirmPassword");
-const confirmPassword = document.querySelector("#confirmPassword");
-const password = document.querySelector("#password");
 
 registerForm.addEventListener("submit", (event) => {
   event.preventDefault();

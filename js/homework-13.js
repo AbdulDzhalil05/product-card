@@ -89,6 +89,7 @@ const cafe = new Cafe("Волна", "Россия, г.Москва, ул.Лен�
 console.log(cafe.getInfo());
 
 cafe.orderDrink(coffee);
+cafe.orderDrink(lemonade);
 
 console.log(coffee.getInfo());
 console.log(tea.getInfo());
